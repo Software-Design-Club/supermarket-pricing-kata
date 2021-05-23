@@ -8,6 +8,10 @@ class Can implements UnitOfSale {
   divisible = false
 }
 
+class Bulk implements UnitOfSale {
+  divisible = false
+}
+
 
 interface Item {
   name: string,
@@ -20,8 +24,14 @@ interface Checkout {
   calculateTotal(items: Item[]): Price
 }
 
-class Beans implements Item {
+class CannedItem implements Item {
   name = 'Beans'
   unit = new Can()
   price = 0.5
+}
+
+class BulkItem implements Item {
+  name = 'Dry Beans'
+  unit = new Bulk()
+  price = 1.99
 }

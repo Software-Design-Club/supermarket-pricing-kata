@@ -4,6 +4,9 @@
 - A can of beans cost $0.50
 - Dry Beans are $1.99 a pound
 
+  #### Question
+  How does UnitOfSale evolves? How does the concrete implementation evolve.
+
 ### Fractional Pricing
 - Item is $X a weight unit
 - fractional unit is $X/fraction
