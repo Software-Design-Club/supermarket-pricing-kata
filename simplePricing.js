@@ -1,14 +1,18 @@
 var Can = /** @class */ (function () {
     function Can() {
-        this.divisible = false;
     }
+    Can.prototype.constraint = function (quantity) {
+        return true;
+    };
     return Can;
 }());
-var Bulk = /** @class */ (function () {
-    function Bulk() {
-        this.divisible = false;
+var Pound = /** @class */ (function () {
+    function Pound() {
     }
-    return Bulk;
+    Pound.prototype.constraint = function (quantity) {
+        return true;
+    };
+    return Pound;
 }());
 var CannedItem = /** @class */ (function () {
     function CannedItem() {
@@ -21,7 +25,7 @@ var CannedItem = /** @class */ (function () {
 var BulkItem = /** @class */ (function () {
     function BulkItem() {
         this.name = 'Dry Beans';
-        this.unit = new Bulk();
+        this.unit = new Pound();
         this.price = 1.99;
     }
     return BulkItem;

@@ -1,15 +1,16 @@
 ## Supermarket Pricing Requirements
 
 ###  Simple Pricing
-- A can of beans cost $0.50
-- Dry Beans are $1.99 a pound
+- [x] A can of beans cost $0.50
+- [x] Dry Beans are $1.99 a pound
 
-  #### Question
-  How does UnitOfSale evolves? How does the concrete implementation evolve.
+#### Question
+How does UnitOfSale evolves? How does the concrete implementation evolve.
 
 ### Fractional Pricing
-- Item is $X a weight unit
-- fractional unit is $X/fraction
+- [x] Dry breans are 1.99 a pound/ 8oz of dry breans - 1.00
+- [x] Cans can only be sold in positive intergers
+- [x] Pounds can be sold in fractions
 
 
 ### Quantity Discount

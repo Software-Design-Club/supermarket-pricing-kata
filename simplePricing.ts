@@ -1,15 +1,21 @@
 type Price = number // Float to 2 decimal places
 
-interface UnitOfSale {
-  divisible: boolean
+
+interface UnitOfSale  {
+  constraint(quantity: number): boolean
 }
 
 class Can implements UnitOfSale {
-  divisible = false
+  constraint(quantity: number): boolean {
+    return true;
+  }
+
 }
 
-class Bulk implements UnitOfSale {
-  divisible = false
+class Pound implements UnitOfSale {
+  constraint(quantity: number): boolean {
+    return true;
+  }
 }
 
 
@@ -20,8 +26,15 @@ interface Item {
 
 }
 
+interface CheckoutItem {
+  quantity: number
+  item: Item
+  createCheckoutItem(quantity: number, item: Item): CheckoutItem // validation on quantity
+  price(quantity: number, item: Item): Price
+}
+
 interface Checkout {
-  calculateTotal(items: Item[]): Price
+  calculateTotal(items: CheckoutItem[]): Price
 }
 
 class CannedItem implements Item {
@@ -32,6 +45,9 @@ class CannedItem implements Item {
 
 class BulkItem implements Item {
   name = 'Dry Beans'
-  unit = new Bulk()
+  unit = new Pound()
   price = 1.99
 }
+
+
+
