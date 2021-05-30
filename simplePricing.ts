@@ -26,11 +26,22 @@ interface Item {
 
 }
 
+interface QuantityDiscount {
+  minimumQuantity: number
+  price: Price
+}
+
+interface DiscountedItem extends CheckoutItem {
+  discountedPrice: Price
+}
+
 interface CheckoutItem {
   quantity: number
   item: Item
-  createCheckoutItem(quantity: number, item: Item): CheckoutItem // validation on quantity
-  price(quantity: number, item: Item): Price
+  price: Price
+  promotion: QuantityDiscount | NoDiscount
+  createCheckoutItem(quantity: number, item: Item): CheckoutItem | DiscountedItem// validation on quantity
+
 }
 
 interface Checkout {

@@ -13,8 +13,9 @@
 
 
 ### Quantity Discount
-- [ ] 3 Cans are $1(when each is normally $.5)
-- [ ] 3 pounds are $3(when normally $1.99)
+- [x] 3 Cans are $1(when each is normally $.5)
+  - [x] What happens if you buy 4 cans?
+- [x] 3 pounds are $3(when normally $1.99)
 - X cans of item are $X
   - If you buy X+1 is the original price
 
