@@ -4,8 +4,7 @@
 - [x] A can of beans cost $0.50
 - [x] Dry Beans are $1.99 a pound
 
-#### Question
-How does UnitOfSale evolves? How does the concrete implementation evolve.
+
 
 ### Fractional Pricing
 - [x] Dry breans are 1.99 a pound/ 8oz of dry breans - 1.00
@@ -14,6 +13,8 @@ How does UnitOfSale evolves? How does the concrete implementation evolve.
 
 
 ### Quantity Discount
+- [ ] 3 Cans are $1(when each is normally $.5)
+- [ ] 3 pounds are $3(when normally $1.99)
 - X cans of item are $X
   - If you buy X+1 is the original price
 
@@ -43,3 +44,6 @@ How does UnitOfSale evolves? How does the concrete implementation evolve.
 - are costs and prices the same class of thing?
 - if a shelf of 100 cans is priced using “buy two, get one free”, how do you value the stock?
 
+
+- How does UnitOfSale evolves? How does the concrete implementation evolve?
+- What would the implementation of pricing floor look like?
