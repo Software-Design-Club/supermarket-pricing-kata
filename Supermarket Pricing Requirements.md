@@ -16,24 +16,23 @@
 - [x] 3 Cans are $1(when each is normally $.5)
   - [x] What happens if you buy 4 cans?
 - [x] 3 pounds are $3(when normally $1.99)
-- X cans of item are $X
-  - If you buy X+1 is the original price
 
 
 ### Promotional Discount
-- Buy X units item  get Y free
-  - X+1 is charged at original price
+-  [x] Buy 3 units item get 1 free(what is the price of the 4th one?)
+  - [x] Buy 4, you get 5
+
 
 ### Reflection/Review
 - What is the state of our design?
 - Do we want to keep going?
 
 ### Percentage Discount
-- Discount/Sale ex: X% an item
+- [x] Discount/Sale ex: X% an item
 
 
 ### Quantity Percentage Discount
-- Buy x pounds and get x% off
+- [x] Buy x pounds and get x% off
 
 
 
@@ -42,8 +41,9 @@
 - does fractional money exist?
 - when (if ever) does rounding take place?
 - how do you keep an audit trail of pricing decisions (and do you need to)?
-- are costs and prices the same class of thing?
 - if a shelf of 100 cans is priced using “buy two, get one free”, how do you value the stock?
+- are costs and prices the same class of thing?
+
 
 
 - How does UnitOfSale evolves? How does the concrete implementation evolve?
